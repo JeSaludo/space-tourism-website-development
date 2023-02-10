@@ -74,10 +74,17 @@ nav > .nav-list > .nav-item{
 } 
 
 nav > .nav-list{
-   
+    
     margin-left: 100px;
 
 }
+
+nav > .nav-list > .nav-item > a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 h1{
     color: var(--primary-white);
@@ -111,6 +118,7 @@ p{
     font-weight: 400;
     
 }
+
 
 .circle{
     width: 244px;

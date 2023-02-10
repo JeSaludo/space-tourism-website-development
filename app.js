@@ -8,7 +8,15 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}))
 
 app.get("/", (req,res)=>{
+    res.redirect("/home");
+
+})
+
+app.get("/home", (req,res)=>{
     res.render('index');
+})
+app.get("/destination-moon", (req,res) =>{
+    res.render('destination-moon');
 })
 
 app.listen(3000, function(){
