@@ -73,19 +73,26 @@ nav > .nav-list > .nav-item{
     
 } 
 
-nav > .nav-list{
-    
+nav > .nav-list{    
     margin-left: 100px;
-
 }
 
 nav > .nav-list > .nav-item > a{
     text-decoration: none;
     color: white;
+    display: inline-blocks;
+   
 }
 
-
-
+nav > .nav-list > .nav-item > .active{    
+    color: white;
+    border-bottom: 5px solid white;
+    width: 100%;
+    border-radius: 1px;
+   
+    padding-bottom: 32px;     
+  
+}
 h1{
     color: var(--primary-white);
     font-size: 150px;
@@ -136,7 +143,7 @@ p{
     margin-top: 4       0px;
 }
 
-main{
+.hero-grid{
     margin: 170px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -157,4 +164,21 @@ main{
     width: 50%;
     margin: 0 auto;
     text-align: left;
+}
+
+/*Adding Transition*/
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+main{
+    animation: transitionIn 0.75s;    
 }
