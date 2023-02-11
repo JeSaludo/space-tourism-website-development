@@ -15,21 +15,27 @@
 
 
 .bg-image{
-    background-image: url("../images/home/background-home-desktop.jpg");
+    
     background-repeat: none;
     background-size: cover;
     width: 1440px;
-    height: 730px;
+    height: 800px;
+    left: 0;
+    right: 0;
+    top: 0;
     margin: 0 auto;
+    z-index: -9 ;
+    position: absolute;
    
 }
 
 header{
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  
+  position: relative;
 }
 
 .nav-logo{
@@ -53,7 +59,7 @@ hr {
 
 nav{  
     position: relative;
-    right: -20px;
+    right: 0;
     z-index: 2;         
     width: 830px;
     height: 96px;   
@@ -181,4 +187,76 @@ p{
 }
 main{
     animation: transitionIn 0.75s;    
+}
+/* Destination Moon*/
+
+.destination-header{
+    position: relative;
+    width: 30%;
+    margin: 60px 150px  0;
+
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 100px 0;
+}
+.destination-nav{
+    margin: 0 -30px;
+}
+.destination-nav > ul >li{
+    
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    margin: 38px 20px;
+    font-family: var(--ff-barlow);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400    ;
+}
+
+.destination-img{
+    width: 428px;
+    height: 428px;
+    margin: 40px 100px;
+}
+
+.destination-nav > ul > li> a{
+    text-decoration: none;
+    color: white;
+    display: inline-blocks;
+    
+}
+
+.destination-nav > ul > li > .active{    
+    color: white;
+    border-bottom: 5px solid white;
+    width: 100%;
+    border-radius: 1px;
+   
+    padding-bottom: 32px;     
+  
+}
+
+.destination-topic--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+}
+
+.destination-topic > hr{
+
+    left: 0.22%;
+    right: 0%;
+    margin: 15px 0;
+    bottom: 18.86%;
+    
+    background: #383B4B;
+}
+
+.destination-topic > p{
+    width: 60%;
+    text-align: justify ;
 }
